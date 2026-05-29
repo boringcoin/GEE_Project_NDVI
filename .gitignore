@@ -53,6 +53,9 @@ image_process*/
 Train and predict/
 Train%20and%20predict/
 
+# External research repositories cloned for local verification
+external/
+
 # Root-level old generated comparison assets
 DATA_COMPARISON.md
 NDVI数据处理效果对比报告.md

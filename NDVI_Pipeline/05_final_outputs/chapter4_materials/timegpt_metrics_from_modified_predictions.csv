@@ -1,0 +1,2 @@
+model,source_file,points,test_samples,date_start,date_end,MSE,MAE,RMSE,SMAPE
+TimeGPT,/home/justin/下载/Modified_Predictions_all.csv,100,13100,2020-01-13,2025-05-16,0.00823086520687023,0.07395852671755726,0.09072411590569637,43.1604892076758
