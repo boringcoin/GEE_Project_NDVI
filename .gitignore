@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+training_log.txt
+/tmp/
+*.tmp
+
+# Large raw data and legacy workspaces
+Data/
+Data_1/
+NDVI/
+NDVI_fitting/
+NDVI_multi_var/
+results_*/
+Results/
+
+# Legacy training outputs and archives
+Train and predict/Results/
+Train and predict/results_*/
+Train and predict/_archive/
+Train and predict/pipeline_1000pts/
+
+# Pipeline raw and large intermediate CSVs
+NDVI_Pipeline/01_raw_data/*.csv
+NDVI_Pipeline/02_reconstruction/output/*.csv
+
+# Keep final reconstructed NDVI in final outputs if desired, but ignore very large diagnostic/sample tables
+NDVI_Pipeline/05_final_outputs/chapter4_materials/residual_analysis_samples.csv
+
+# Generated caches
+.cache/
+
+# Legacy/old exploratory folders not needed for final pipeline
+.qoder/
+NDVI_Filter/
+NDVI_Interpolation/
+Plot/
+image_process*/
+Train and predict/
+Train%20and%20predict/
+
+# Root-level old generated comparison assets
+DATA_COMPARISON.md
+NDVI数据处理效果对比报告.md
+NDVI数据处理方法全景报告.md
+generate_comparison_table_figure.py
+smoothing_methods_comparison_paper.png

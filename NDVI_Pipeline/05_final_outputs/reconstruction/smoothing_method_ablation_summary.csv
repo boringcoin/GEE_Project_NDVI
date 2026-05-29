@@ -1,0 +1,4 @@
+variant,feature_count,points,MSE_mean,MSE_median,MAE_mean,MAE_median,RMSE_mean,RMSE_median,SMAPE_mean,SMAPE_median,time_s
+Kalman_NoSmooth,3,1000,0.0012,0.0008,0.02,0.0188,0.031,0.0274,4.8998,3.544,388.5
+Kalman_SG,3,1000,0.0001,0.0001,0.0057,0.005,0.0088,0.0075,1.639,0.96,322.2
+Kalman_Whittaker,3,1000,0.0001,0.0,0.0048,0.0042,0.0064,0.0053,1.4602,0.8109,330.4

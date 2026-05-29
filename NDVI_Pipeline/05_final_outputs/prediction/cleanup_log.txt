@@ -1,0 +1,11 @@
+已清理的中间实验文件：
+- NDVI_Pipeline/03_training/xgboost_ewma_feature_ablation.py：逐点慢速EWMA消融脚本，中途停止，已由快速EWMA消融替代。
+- NDVI_Pipeline/03_training/xgboost_ewma_residual_correction.py：早期残差校正脚本，未严格采用最终OOF残差训练口径，已由 xgboost_ewma_rc_oof_split.py 替代。
+- NDVI_Pipeline/04_results/xgboost_ewma_feature_ablation：中断慢速实验结果目录。
+- NDVI_Pipeline/04_results/xgboost_ewma_residual_correction：早期残差校正结果目录。
+
+保留的关键实验文件：
+- NDVI_Pipeline/03_training/xgboost_ewma_feature_ablation_fast.py
+- NDVI_Pipeline/03_training/xgboost_structure_ablation_ewma.py
+- NDVI_Pipeline/03_training/xgboost_ewma_rc_oof_split.py
+- NDVI_Pipeline/04_results/final_xgboost_prediction_report
