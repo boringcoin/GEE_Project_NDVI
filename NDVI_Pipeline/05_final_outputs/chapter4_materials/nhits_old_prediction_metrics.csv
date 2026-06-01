@@ -1,2 +1,0 @@
-model,source,points,test_samples,date_start,date_end,MSE,MAE,RMSE,SMAPE
-N-HiTS,Data/results/results_NHITS/Prediction_Results_*_NHITS.csv,430,46010,2021-01-07,2025-05-16,0.0013138463366445556,0.026637543357015854,0.0362470183138497,15.34948405257232
