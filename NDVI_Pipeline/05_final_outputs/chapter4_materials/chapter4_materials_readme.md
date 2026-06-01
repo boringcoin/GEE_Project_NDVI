@@ -16,11 +16,11 @@
 1. `unified_model_comparison_1985_2015/table4_2_unified_model_comparison_for_paper.csv`  
    不同预测模型最终测试集指标对比，用于说明模型选择。
 
-2. `final_xgboost_parameter_ablation.csv`  
-   XGBoost 参数消融实验，用于说明最终超参数方案。
+2. `final_xgboost_parameter_ablation_for_paper.csv`  
+   XGBoost 参数消融实验论文展示版，方案名称已改为中文可读形式。
 
-3. `final_ewma_feature_ablation.csv`  
-   EWMA 特征消融实验，用于说明加入 `EWMA_3` 的必要性。
+3. `final_ewma_feature_ablation_for_paper.csv`  
+   EWMA 特征消融实验论文展示版，输入方案名称已改为中文可读形式。
 
 4. `final_xgboost_model_comparison.csv`  
    基础 XGBoost、EWMA-XGBoost、EWMA-RC-XGBoost 三类结构对比。
