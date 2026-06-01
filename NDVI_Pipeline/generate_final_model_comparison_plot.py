@@ -50,12 +50,7 @@ def main() -> None:
     for col in ["MSE", "MAE", "RMSE"]:
         df[col] = df[col].astype(float)
 
-    colors = {
-        "集成学习模型": "#3F7CAC",
-        "深度时序模型": "#7D5A9E",
-        "时序基础模型": "#D08C45",
-    }
-    bar_colors = [colors[t] for t in df["模型类型"]]
+    bar_color = "#3F7CAC"
 
     fig, axes = plt.subplots(2, 2, figsize=(13.5, 8.2))
     metrics = [
@@ -68,7 +63,7 @@ def main() -> None:
     for ax, (metric, ylabel) in zip(axes.ravel(), metrics):
         values = df[metric].to_numpy()
         x = np.arange(len(df))
-        bars = ax.bar(x, values, color=bar_colors, width=0.68, edgecolor="#2E3740", linewidth=0.5)
+        bars = ax.bar(x, values, color=bar_color, width=0.68, edgecolor="#2E3740", linewidth=0.5)
         ax.set_xticks(x)
         ax.set_xticklabels(df["模型"], rotation=28, ha="right")
         ax.set_ylabel(ylabel)
@@ -87,12 +82,7 @@ def main() -> None:
                 rotation=0,
             )
 
-    handles = [
-        plt.Rectangle((0, 0), 1, 1, color=color, ec="#2E3740", lw=0.5)
-        for color in colors.values()
-    ]
-    fig.legend(handles, list(colors.keys()), loc="upper center", ncol=3, frameon=False, bbox_to_anchor=(0.5, 0.97))
-    fig.suptitle("不同预测模型测试集指标对比", fontsize=17, fontweight="bold", y=1.02)
+    fig.suptitle("不同预测模型测试集指标对比", fontsize=17, fontweight="bold", y=0.99)
     fig.text(
         0.5,
         0.005,
@@ -102,7 +92,7 @@ def main() -> None:
         fontsize=10,
         color="#4B5560",
     )
-    fig.tight_layout(rect=[0.02, 0.04, 0.98, 0.92])
+    fig.tight_layout(rect=[0.02, 0.04, 0.98, 0.94])
 
     png = OUT_DIR / "fig4_2_final_model_metric_comparison.png"
     svg = OUT_DIR / "fig4_2_final_model_metric_comparison.svg"
