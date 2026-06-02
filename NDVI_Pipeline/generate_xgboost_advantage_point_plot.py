@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import io
 import os
+import argparse
 import subprocess
 from pathlib import Path
 
@@ -162,9 +163,13 @@ def plot_point(point: str, preds: dict[str, pd.DataFrame], metrics: pd.DataFrame
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--point", default="point40", help="Point id to plot, e.g. point40. Use 'auto' to select by XGBoost advantage.")
+    args = parser.parse_args()
     setup_style()
     preds = {model: load_prediction_from_git(path) for model, path in PREDICTION_FILES.items()}
-    point, metrics = select_point(preds)
+    selected, metrics = select_point(preds)
+    point = selected if args.point == "auto" else args.point
     plot_point(point, preds, metrics)
 
 
