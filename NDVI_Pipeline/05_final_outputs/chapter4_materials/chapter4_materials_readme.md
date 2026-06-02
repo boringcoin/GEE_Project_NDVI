@@ -39,10 +39,13 @@
 3. `typical_point_prediction_curves.png`  
    典型样点预测曲线。
 
-4. `feature_importance_ewma_xgboost.png`  
+4. `xgboost_advantage_point/fig4_x_xgboost_advantage_point_predictions.png`  
+   用于突出 XGBoost 优势的典型样点多模型预测曲线图。
+
+5. `feature_importance_ewma_xgboost.png`  
    EWMA-XGBoost 特征重要性图。
 
-5. `residual_smape_by_ndvi_bin.png`  
+6. `residual_smape_by_ndvi_bin.png`  
    残差校正模型在不同 NDVI 区间的相对误差分析。
 
 ## 已清理内容
