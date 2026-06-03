@@ -25,7 +25,10 @@
 4. `final_xgboost_model_comparison.csv`  
    基础 XGBoost、EWMA-XGBoost、EWMA-RC-XGBoost 三类结构对比。
 
-5. `final_data_split_summary.csv`  
+5. `lstm_feature_residual_ablation/lstm_feature_residual_ablation_for_paper.csv`  
+   LSTM 上复用“特征增强—残差校正”路线的补充消融实验。结果显示该路线对 LSTM 未带来稳定提升，可作为 EWMA-XGBoost 选择依据的补充说明。
+
+6. `final_data_split_summary.csv`  
    数据划分说明。
 
 ## 主文图件
@@ -47,6 +50,9 @@
 
 6. `residual_smape_by_ndvi_bin.png`  
    残差校正模型在不同 NDVI 区间的相对误差分析。
+
+7. `lstm_feature_residual_ablation/lstm_feature_residual_ablation.png`  
+   LSTM 特征增强与残差校正消融图。
 
 ## 已清理内容
 
