@@ -1,0 +1,4 @@
+模型名称,模块组成,输入特征,测试样本数,MSE,MAE,RMSE,SMAPE
+XGBoost,基础XGBoost预测器,"NDVI_prev1, NDVI_prev2, NDVI_prev3",131000,0.0000,0.0037,0.0051,1.3468
+EWMA-XGBoost,EWMA趋势记忆 + XGBoost,"NDVI_prev1, NDVI_prev2, NDVI_prev3, NDVI_ewma_3",131000,0.0000,0.0031,0.0045,1.2249
+EWMA-RC-XGBoost,EWMA趋势记忆 + XGBoost + OOF残差校正,"基础预测值, 历史NDVI, EWMA, 差分残差特征",131000,0.0000,0.0021,0.0034,1.4079
